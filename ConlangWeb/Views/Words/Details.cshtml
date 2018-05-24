@@ -1,0 +1,42 @@
+﻿@model ConlangWeb.Models.Word
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Word</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Dutch)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Dutch)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.English)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.English)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Con)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Con)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Note)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Note)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
